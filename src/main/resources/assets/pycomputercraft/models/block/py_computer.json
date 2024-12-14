@@ -1,12 +1,9 @@
-   {
-     "parent": "block/cube",
-     "textures": {
-       "down": "pycomputercraft:block/py_computer_side",
-       "up": "pycomputercraft:block/py_computer_top",
-       "north": "pycomputercraft:block/py_computer",
-       "south": "pycomputercraft:block/py_computer_side",
-       "west": "pycomputercraft:block/py_computer_side_one",
-       "east": "pycomputercraft:block/py_computer_side"
-     }
-   }
-   
+{
+  "parent": "pycomputercraft:block/pyccblock",
+  "textures": {
+    "side": "pycomputercraft:block/py_computer_side",
+    "front": "pycomputercraft:block/py_computer_top",
+    "north": "pycomputercraft:block/py_computer",
+    "west": "pycomputercraft:block/py_computer_side_one"
+  }
+}

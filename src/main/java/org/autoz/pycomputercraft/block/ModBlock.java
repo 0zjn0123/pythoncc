@@ -32,7 +32,7 @@ public class ModBlock {
 //            "py_computer", true
 //    );
 
-    public static final Block PY_COMPUTER = new Block(Block.Settings.create());
+    public static final Block PY_COMPUTER = new PyccBlock(Block.Settings.create().strength(4.0f));
 
 
     public static void initialize() {
