@@ -1,0 +1,9 @@
+   {
+     "variants": {
+       "facing=north": { "model": "pycomputercraft:block/py_computer", "y": 0 },
+       "facing=south": { "model": "pycomputercraft:block/py_computer", "y": 180 },
+       "facing=west": { "model": "pycomputercraft:block/py_computer", "y": 90 },
+       "facing=east": { "model": "pycomputercraft:block/py_computer", "y": 270 }
+     }
+   }
+   

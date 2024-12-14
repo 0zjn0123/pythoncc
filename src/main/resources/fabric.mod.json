@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "pycomputercraft",
+  "version": "${version}",
+  "name": "pycomputercraft",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/pycomputercraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.autoz.pycomputercraft.client.PycomputercraftClient"
+    ],
+    "main": [
+      "org.autoz.pycomputercraft.Pycomputercraft"
+    ]
+  },
+  "mixins": [
+    "pycomputercraft.mixins.json",
+    {
+      "config": "pycomputercraft.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
