@@ -39,21 +39,21 @@ public class PyccBlock extends HorizontalFacingBlock {
         return super.getPlacementState(ctx).with(Properties.HORIZONTAL_FACING, ctx.getHorizontalPlayerFacing().getOpposite());
     }
 
-    @Override
-    protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
-        // TODO:打开电脑界面
-        if (!world.isClient) {
-            player.openHandledScreen(state.createScreenHandlerFactory(world, pos));
-        }
-        return ActionResult.SUCCESS;
-
-
+//    @Override
+//    protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+//        // TODO:打开电脑界面
+//        if (!world.isClient) {
+//            player.openHandledScreen(state.createScreenHandlerFactory(world, pos));
+//        }
+//        return ActionResult.SUCCESS;
+//
+//
+//    }
+//    @Override
+//        public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
+//        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) ->
+//                new CustomScreenHandler(syncId, inventory),
+//                Text.translatable("block.pycomputercraft.py_computer")
+//        );
+//    }
     }
-    @Override
-        public NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) ->
-                new CustomScreenHandler(syncId, inventory),
-                Text.translatable("block.pycomputercraft.py_computer")
-        );
-    }
-    }}
